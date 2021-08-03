@@ -81,7 +81,7 @@
     <script src="assets/js/webcam.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript" src="//www.turnjs.com/lib/turn.min.js "></script>
+    <script type="text/javascript" src="www.turnjs.com/lib/turn.min.js "></script>
 
     <script>
         Webcam.set({
@@ -132,7 +132,7 @@
             $('#masuk').click(function (e) {
                 e.preventDefault()
                 take_snapshot()
-                $.post("http://asi.adyawinsa.com:805/Main/masuk", {
+                $.post("//asi.adyawinsa.com:805/Main/masuk", {
                         nik: $('#nik').val(),
                         lokasi: $('#lokasi').val(),
                         foto: $('#foto').val(),
@@ -147,7 +147,7 @@
             $('#pulang').click(function (e) {
                 e.preventDefault()
                 take_snapshot()
-                $.post("http://asi.adyawinsa.com:805/Main/pulang", {
+                $.post("//asi.adyawinsa.com:805/Main/pulang", {
                         nik: $('#nik').val(),
                         lokasi: $('#lokasi').val(),
                         foto: $('#foto').val(),
