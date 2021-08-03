@@ -132,7 +132,7 @@
             $('#masuk').click(function (e) {
                 e.preventDefault()
                 take_snapshot()
-                $.post("//asi.adyawinsa.com:805/Main/masuk", {
+                $.post("http://asi.adyawinsa.com:805/Main/masuk", {
                         nik: $('#nik').val(),
                         lokasi: $('#lokasi').val(),
                         foto: $('#foto').val(),
@@ -147,7 +147,7 @@
             $('#pulang').click(function (e) {
                 e.preventDefault()
                 take_snapshot()
-                $.post("//asi.adyawinsa.com:805/Main/pulang", {
+                $.post("http://asi.adyawinsa.com:805/Main/pulang", {
                         nik: $('#nik').val(),
                         lokasi: $('#lokasi').val(),
                         foto: $('#foto').val(),
