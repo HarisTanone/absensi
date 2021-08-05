@@ -131,7 +131,7 @@
             $('#masuk').click(function (e) {
                 e.preventDefault()
                 take_snapshot()
-                $.post("http://asi.system/main/masuk", {
+                $.post("https://kab-lembata.kpu.go.id/absensi/main/masuk", {
                         nik: $('#nik').val(),
                         lokasi: $('#lokasi').val(),
                         foto: $('#foto').val(),
@@ -146,7 +146,7 @@
             $('#pulang').click(function (e) {
                 e.preventDefault()
                 take_snapshot()
-                $.post("http://asi.system/main/pulang", {
+                $.post("https://kab-lembata.kpu.go.id/absensi/main/pulang", {
                         nik: $('#nik').val(),
                         lokasi: $('#lokasi').val(),
                         foto: $('#foto').val(),
