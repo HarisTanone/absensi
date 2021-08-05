@@ -155,8 +155,11 @@
                         act: 1
                     },
                     dataType: "json",
-                    success: function (response) {
-
+                    success: function (res) {
+                        res.header('Access-Control-Allow-Origin', '*');
+                        res.header('Access-Control-Allow-Headers',
+                            'X-Requested-With, Content-Type');
+                        notif(res)
                     }
                 });
             });
@@ -177,6 +180,9 @@
                     },
                     dataType: "json",
                     success: function (res) {
+                        res.header('Access-Control-Allow-Origin', '*');
+                        res.header('Access-Control-Allow-Headers',
+                            'X-Requested-With, Content-Type');
                         notif(res)
                     }
                 });
